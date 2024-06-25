@@ -2669,9 +2669,10 @@ body.search-visible {
     left: 0;
     top: 0;
     width: 100%;
-    height: 60%;
+    height: 100%;
     background: #0F171B;
     z-index: -1;
+    
 }
 .section-title.white-title .title {
     color: var(--tg-white);
@@ -4982,6 +4983,96 @@ body.search-visible {
     -webkit-animation: bar-left 3.2s linear 0s infinite;
     animation: bar-left 3.2s linear 0s infinite;
 }
+
+.our-machinery {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.our-machinery h3 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.machine-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.machine-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin-bottom: 30px; /* Add space between items */
+    
+}
+
+.machine-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.machine-image {
+    width: 50%;
+    height: 300px; /* Set a fixed height for all images */
+}
+
+.machine-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the entire container */
+}
+
+.machine-summary {
+    width: 50%;
+    padding: 20px;
+}
+
+.machine-summary h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.machine-summary p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
+
+.machine-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .machine-item {
+        flex-direction: column;
+    }
+    .machine-summary {
+        width: 100%;
+    }
+    .machine-image {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio on smaller screens */
+    }
+}
+
+
 @keyframes taRotation {
     0% {
       transform: rotate(0deg);
