@@ -40,7 +40,8 @@
 /*=============================
 	1. Google Fonts
 ===============================*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 /*=============================
 	01. Variable CSS
@@ -1313,6 +1314,8 @@ body.search-visible {
     min-height: 975px;
     position: relative;
     z-index: 1;
+    width: 100%;
+    height: 300px;
 }
 .slider-bg::before {
     content: "";
@@ -1339,7 +1342,7 @@ body.search-visible {
     margin-bottom: 15px;
 }
 .slider-content .title {
-    font-size: 70px;
+    font-size: 50px;
     color: var(--tg-white);
     margin-bottom: 45px;
     line-height: 1.1;
@@ -1699,7 +1702,7 @@ body.search-visible {
 .about-img-wrap {
     position: relative;
     padding-right: 100px;
-    padding-bottom: 160px;
+    padding-bottom: 20px;
 }
 .about-img-wrap img {
     border-radius: 10px;
@@ -1908,10 +1911,10 @@ body.search-visible {
 ===============================*/
 .services-area {
     position: relative;
-    padding: 120px 0;
+    padding: 20px 0;
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 120px;
+    margin-bottom: 20px;
 }
 .services-area::before {
     content: "";
@@ -2217,7 +2220,7 @@ body.search-visible {
 /* services-four */
 .services-area-four {
     background: var(--tg-section-background);
-    padding: 120px 0 90px;
+    padding: 20px 0 20px;
 }
 .services-item-four {
     border-radius: 20px;
@@ -2578,7 +2581,7 @@ body.search-visible {
 ===============================*/
 .consultation-area {
     background: var(--tg-section-background);
-    padding: 120px 0;
+    padding: 20px 0;
     position: relative;
 }
 .consultation-form .form-grp {
@@ -2622,7 +2625,7 @@ body.search-visible {
 /* consultation-two */
 .consultation-area-two {
     background: var(--tg-section-background);
-    padding: 120px 0;
+    padding: 20px 0;
     position: relative;
 }
 .consultation-content.consultation-content-two {
@@ -2638,8 +2641,8 @@ body.search-visible {
     top: 0;
 }
 .consultation-img-two .play-btn {
-    width: 120px;
-    height: 120px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2661,7 +2664,7 @@ body.search-visible {
 .project-area {
     position: relative;
     z-index: 1;
-    padding: 120px 0 0;
+    padding: 20px 0 0;
 }
 .project-area::before {
     content: "";
@@ -3169,7 +3172,7 @@ body.search-visible {
 ===============================*/
 .faq-area {
     background: var(--tg-section-background);
-    padding: 120px 0 90px;
+    padding: 20px 0 90px;
 }
 .faq-content p {
     margin-bottom: 35px;
@@ -3642,7 +3645,7 @@ body.search-visible {
 .counter-area-two {
     position: relative;
     z-index: 1;
-    padding: 120px 0 90px;
+    padding: 20px 0 90px;
 }
 .counter-bg {
     background-size: cover;
@@ -5161,3 +5164,112 @@ body.search-visible {
         transform: scale(1,0);
     }
 }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
