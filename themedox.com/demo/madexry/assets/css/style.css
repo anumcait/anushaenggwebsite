@@ -28,7 +28,7 @@
 19. Testimonial
 20. CTA
 21. Error
-22. Blog
+22. Machinery
 23. Contact
 24. Footer
 25. Preloader
@@ -3980,36 +3980,36 @@ body.search-visible {
 }
 
 /*=============================
-	22. Blog
+	22. Machinery
 ===============================*/
-.blog-post-item {
+.machinery-item {
     margin-bottom: 30px;
 }
-.blog-meta .list-wrap {
+.Machinery-meta .list-wrap {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 25px;
     margin-bottom: 10px;
 }
-.blog-meta .list-wrap li {
+.Machinery-meta .list-wrap li {
     font-size: 15px;
     text-transform: capitalize;
 }
-.blog-meta .list-wrap li i {
+.Machinery-meta .list-wrap li i {
     margin-right: 8px;
 }
-.blog-meta .list-wrap li a {
+.Machinery-meta .list-wrap li a {
     color: var(--tg-paragraph-color);
 }
-.blog-meta .list-wrap li a:hover {
+.Machinery-meta .list-wrap li a:hover {
     color: var(--tg-primary-color);
 }
-.blog-post-content .title {
+.machinery-content .title {
     margin-bottom: 20px;
     font-size: 24px;
 }
-.blog-post-content .title a {
+.machinery-content .title a {
 	color: inherit;
 	display: inline;
 	padding-bottom: 0;
@@ -4021,28 +4021,28 @@ body.search-visible {
 	background-repeat: no-repeat;
 	background-position: left 100%;
 }
-.blog-post-content .title a:hover {
+.machinery-content .title a:hover {
 	background-size: 100% 1px;
     color: var(--tg-primary-color);
 }
-.blog-post-thumb {
+.machinery-thumb {
     overflow: hidden;
     border-radius: 10px;
     position: relative;
     margin-bottom: 30px;
 }
-.blog-post-thumb img {
+.machinery-thumb img {
     width: 100%;
     height: 270px;
     object-fit: cover;
     transform: scale(1);
     transition: all .8s cubic-bezier(.25, .46, .45, .94);
 }
-.blog-post-item-two:hover .blog-post-thumb img,
-.blog-post-item:hover .blog-post-thumb img {
+.machinery-item-two:hover .machinery-thumb img,
+.machinery-item:hover .machinery-thumb img {
     transform: scale(1.1);
 }
-.blog-post-thumb .tag {
+.machinery-thumb .tag {
     position: absolute;
     left: 20px;
     top: 20px;
@@ -4056,14 +4056,14 @@ body.search-visible {
     padding: 7px 10px;
     border-radius: 5px;
 }
-.blog-post-thumb .tag:hover {
+.machinery-thumb .tag:hover {
     background: var(--tg-secondary-color);
     color: var(--tg-white);
 }
-.blog-post-content p {
+.machinery-content p {
     margin-bottom: 20px;
 }
-.blog-post-content .link-btn {
+.machinery-content .link-btn {
     font-family: var(--tg-heading-font-family);
     text-transform: uppercase;
     text-decoration: underline;
@@ -4071,31 +4071,31 @@ body.search-visible {
     color: var(--tg-paragraph-color);
     display: inline-block;
 }
-.blog-post-content .link-btn:hover {
+.machinery-content .link-btn:hover {
     color: var(--tg-secondary-color);
 }
 
-/* blog-two */
-.blog-post-item-two {
+/* Machinery-two */
+.machinery-item-two {
     margin-bottom: 30px;
 }
-.blog-post-item-two .blog-post-thumb {
+.machinery-item-two .machinery-thumb {
     margin-bottom: 25px;
 }
-.blog-post-item-two .blog-meta .list-wrap {
+.machinery-item-two .Machinery-meta .list-wrap {
     margin-bottom: 15px;
 }
 
-/* blog-three */
-.blog-post-item-three {
+/* Machinery-three */
+.machinery-item-three {
     margin-bottom: 30px;
 }
-.blog-post-thumb-three {
+.machinery-thumb-three {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     position: relative;
 }
-.blog-post-thumb-three .post-date {
+.machinery-thumb-three .post-date {
     position: absolute;
     right: 30px;
     top: 30px;
@@ -4109,17 +4109,17 @@ body.search-visible {
     padding: 12px 14px;
     border-radius: 5px;
 }
-.blog-post-thumb-three img {
+.machinery-thumb-three img {
     width: 100%;
     height: 330px;
     object-fit: cover;
     transition: all .8s cubic-bezier(.25, .46, .45, .94);
     transform: scale(1);
 }
-.blog-post-item-three:hover .blog-post-thumb-three img {
+.machinery-item-three:hover .machinery-thumb-three img {
     transform: scale(1.1);
 }
-.blog-post-content-three {
+.machinery-content-three {
     border-radius: 0px 0px 10px 10px;
     border: 1px solid #E3E3E3;
     padding: 40px 40px 35px 40px;
@@ -4127,11 +4127,11 @@ body.search-visible {
     transition: .3s linear;
     background: var(--tg-white);
 }
-.blog-post-item-three:hover .blog-post-content-three {
+.machinery-item-three:hover .machinery-content-three {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
     border-color: var(--tg-white);
 }
-.blog-post-content-three .tag {
+.machinery-content-three .tag {
     display: inline-flex;
     align-items: center;
     color: #ABABAB;
@@ -4142,20 +4142,20 @@ body.search-visible {
     line-height: 1;
     margin-bottom: 5px;
 }
-.blog-post-content-three .tag:hover {
+.machinery-content-three .tag:hover {
     color: var(--tg-primary-color);
 }
-.blog-post-content-three .tag i {
+.machinery-content-three .tag i {
     color: var(--tg-primary-color);
     margin-right: 5px;
 }
-.blog-post-content-three .title {
+.machinery-content-three .title {
     margin-bottom: 0;
     font-size: 30px;
     font-weight: 600;
     line-height: 1.35;
 }
-.blog-post-content-three .title a {
+.machinery-content-three .title a {
     color: inherit;
     display: inline;
     padding-bottom: 0;
@@ -4167,21 +4167,21 @@ body.search-visible {
     background-repeat: no-repeat;
     background-position: left 100%;
 }
-.blog-post-content-three .title a:hover {
+.machinery-content-three .title a:hover {
     background-size: 100% 1px;
     color: var(--tg-primary-color);
 }
-.blog-active [class*="col-"] {
+.Machinery-active [class*="col-"] {
     padding: 0 15px;
 }
-.blog-nav {
+.Machinery-nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-bottom: 50px;
     gap: 20px;
 }
-.blog-nav .slick-arrow {
+.Machinery-nav .slick-arrow {
     border: none;
     border-radius: 5px;
     background: var(--tg-white);
@@ -4196,33 +4196,33 @@ body.search-visible {
     -webkit-text-stroke: 1px var(--tg-secondary-color);
     color: transparent;
 }
-.blog-nav .slick-arrow:hover {
+.Machinery-nav .slick-arrow:hover {
     color: var(--tg-white);
     background: var(--tg-primary-color);
     -webkit-text-stroke: transparent;
 }
 
-/* inner-blog */
-.blog-item {
+/* inner-Machinery */
+.Machinery-item {
     margin-bottom: 30px;
 }
-.blog-thumb img {
+.Machinery-thumb img {
     border-radius: 10px 10px 0 0;
 }
-.blog-content {
+.Machinery-content {
     border-radius: 0px 0px 10px 10px;
     background: var(--tg-white);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.06);
     padding: 45px 45px;
 }
-.blog-content .title {
+.Machinery-content .title {
     font-size: 40px;
     margin-bottom: 20px;
 }
-.blog-content p {
+.Machinery-content p {
     margin-bottom: 30px;
 }
-.blog-content .link-btn {
+.Machinery-content .link-btn {
     font-family: var(--tg-heading-font-family);
     text-transform: uppercase;
     text-decoration: underline;
@@ -4231,22 +4231,22 @@ body.search-visible {
     display: inline-block;
     line-height: 1;
 }
-.blog-content .link-btn:hover {
+.Machinery-content .link-btn:hover {
     color: var(--tg-primary-color);
 }
 
-/* blog-sidebar */
-.blog-sidebar {
+/* Machinery-sidebar */
+.Machinery-sidebar {
     border-radius: 10px;
     border: 1px solid #CFCFCF;
     padding: 40px 25px 50px;
     position: sticky;
     top: 100px;
 }
-.blog-widget {
+.Machinery-widget {
     margin-bottom: 40px;
 }
-.blog-widget:last-child {
+.Machinery-widget:last-child {
     margin-bottom: 0;
 }
 .widget-title {
@@ -4368,24 +4368,24 @@ body.search-visible {
     color: var(--tg-white);
 }
 
-/* blog-details */
-.blog-content.blog-details-content .title {
+/* Machinery-details */
+.Machinery-content.Machinery-details-content .title {
     font-size: 30px;
 }
-.blog-details-content blockquote {
+.Machinery-details-content blockquote {
     margin: 0 0 50px;
     text-align: center;
     border-radius: 10px;
     border: 1px solid var(--tg-primary-color);
     padding: 35px 30px;
 }
-.blog-details-content blockquote .icon {
+.Machinery-details-content blockquote .icon {
     font-size: 50px;
     line-height: 1;
     color: var(--tg-primary-color);
     margin-bottom: 10px;
 }
-.blog-details-content blockquote p {
+.Machinery-details-content blockquote p {
     color: var(--tg-secondary-color);
     font-family: var(--tg-heading-font-family);
     font-size: 18px;
@@ -4394,7 +4394,7 @@ body.search-visible {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-.blog-details-content blockquote cite {
+.Machinery-details-content blockquote cite {
     font-style: normal;
     font-size: 18px;
     font-family: var(--tg-heading-font-family);
@@ -4445,13 +4445,13 @@ body.search-visible {
     color: var(--tg-white);
     border-color: var(--tg-primary-color);
 }
-.blog-post-share .list-wrap {
+.machinery-share .list-wrap {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
 }
-.blog-post-share .list-wrap li a {
+.machinery-share .list-wrap li a {
     width: 45px;
     height: 45px;
     display: flex;
@@ -4462,7 +4462,7 @@ body.search-visible {
     color: var(--tg-white);
     font-size: 15px;
 }
-.blog-post-share .list-wrap li a:hover {
+.machinery-share .list-wrap li a:hover {
     background: var(--tg-primary-color);
 }
 .comments-wrap {
@@ -4583,10 +4583,10 @@ body.search-visible {
     font-weight: 500;
     font-size: 15px;
 }
-.blog-style-one .blog-post-item-two {
+.Machinery-style-one .machinery-item-two {
     margin-bottom: 50px;
 }
-.blog-style-two .blog-post-item {
+.Machinery-style-two .machinery-item {
     margin-bottom: 60px;
 }
 

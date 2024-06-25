@@ -551,9 +551,9 @@ $('.testimonial-active-two').slick({
 
 
 /*=============================================
-	=    		blog Active		      =
+	=    		Machinery Active		      =
 =============================================*/
-$('.blog-active').slick({
+$('.Machinery-active').slick({
 	dots: false,
 	infinite: true,
 	speed: 1000,
@@ -561,7 +561,7 @@ $('.blog-active').slick({
 	arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
-    appendArrows: ".blog-nav",
+    appendArrows: ".Machinery-nav",
 	slidesToShow: 2,
 	slidesToScroll: 1,
 	responsive: [
@@ -601,7 +601,7 @@ $('.blog-active').slick({
 
 
 /*=============================================
-	=    		blog Active		      =
+	=    		Machinery Active		      =
 =============================================*/
 $('.related-team-active').slick({
 	dots: false,

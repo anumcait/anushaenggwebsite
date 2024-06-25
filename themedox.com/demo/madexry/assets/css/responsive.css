@@ -149,10 +149,10 @@
 .slider-content-three p {
     margin-bottom: 25px;
 }
-.blog-content .title {
+.Machinery-content .title {
     font-size: 38px;
 }
-.blog-content {
+.Machinery-content {
     padding: 45px 40px;
 }
 .error-content .title {
@@ -250,7 +250,7 @@
 .testimonial-item {
     padding: 40px 30px;
 }
-.blog-post-content .title {
+.Machinery-post-content .title {
     font-size: 22px;
 }
 .faq-img img {
@@ -380,14 +380,14 @@
 .project-thumb-three img {
     height: 500px;
 }
-.blog-post-thumb-three img {
+.Machinery-post-thumb-three img {
     height: 290px;
 }
-.blog-post-content-three .title {
+.Machinery-post-content-three .title {
     font-size: 26px;
     line-height: 1.3;
 }
-.blog-post-content-three {
+.Machinery-post-content-three {
     padding: 35px 25px 35px 25px;
 }
 .footer-newsletter-two::before {
@@ -434,17 +434,17 @@
 .contact-form-wrap {
     padding: 45px 25px;
 }
-.blog-thumb img {
+.Machinery-thumb img {
     min-height: 300px;
     object-fit: cover;
 }
-.blog-content {
+.Machinery-content {
     padding: 40px 35px;
 }
-.blog-content .title {
+.Machinery-content .title {
     font-size: 35px;
 }
-.blog-sidebar {
+.Machinery-sidebar {
     padding: 30px 20px 40px;
 }
 .team-details-wrap .row .col-36 {
@@ -702,10 +702,10 @@
 .header-style-three .sticky-menu .menu-nav {
     padding: 20px 0;
 }
-.blog-post-thumb-three img {
+.Machinery-post-thumb-three img {
     height: 250px;
 }
-.blog-post-content-three .title {
+.Machinery-post-content-three .title {
     font-size: 24px;
     line-height: 1.3;
 }
@@ -769,7 +769,7 @@
 .contact-form-wrap {
     margin-bottom: 50px;
 }
-.blog-sidebar {
+.Machinery-sidebar {
     padding: 40px 25px 50px;
     margin-top: 120px;
 }
@@ -906,7 +906,7 @@
 .counter-content .count {
     font-size: 40px;
 }
-.blog-post-thumb img {
+.Machinery-post-thumb img {
     width: 100%;
 }
 .footer-logo {
@@ -1023,10 +1023,10 @@
 .project-thumb-three img {
     height: 460px;
 }
-.blog-nav {
+.Machinery-nav {
     display: none;
 }
-.blog-post-content-three {
+.Machinery-post-content-three {
     padding: 35px 20px 30px 25px;
 }
 .slider-active-three .slick-dots {
@@ -1061,16 +1061,16 @@
     font-size: 34px;
     margin-bottom: 15px;
 }
-.blog-content {
+.Machinery-content {
     padding: 30px 25px;
 }
-.blog-meta .list-wrap {
+.Machinery-meta .list-wrap {
     gap: 10px 20px;
 }
-.blog-content .title {
+.Machinery-content .title {
     font-size: 32px;
 }
-.blog-sidebar {
+.Machinery-sidebar {
     padding: 40px 20px 50px;
     margin-top: 100px;
 }
@@ -1085,16 +1085,16 @@
 .latest-comments .children .comments-box {
     padding: 0 0 30px 0;
 }
-.blog-details-content blockquote {
+.Machinery-details-content blockquote {
     padding: 35px 15px;
 }
-.blog-thumb img {
+.Machinery-thumb img {
     width: 100%;
 }
 .bd-img-wrap img {
     width: 100%;
 }
-.blog-post-share .list-wrap {
+.Machinery-post-share .list-wrap {
     justify-content: flex-start;
     margin-top: 25px;
 }
@@ -1203,7 +1203,7 @@
 .project-content-four {
     padding: 20px 30px 30px 30px;
 }
-.blog-sidebar {
+.Machinery-sidebar {
     padding: 40px 25px 50px;
 }
 .team-details-wrap .row .col-36 {
