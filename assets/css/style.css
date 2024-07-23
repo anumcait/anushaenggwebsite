@@ -4816,7 +4816,7 @@ textarea#comment.massage-bt::placeholder {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    margin-bottom: 30px;
+    margin: 20px;
     cursor: pointer;
     transition: .3s linear;
     background: var(--tg-white);
