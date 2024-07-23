@@ -1578,13 +1578,19 @@ button {
 
 .banner_section {
     width: 100%;
-    /* float: left; */
-    padding: 200px 0px 80px 0px;
+    height:auto;
+    padding: 250px 0px 80px 0px;
+}
+
+.banner_img{
+    width:100%;
+    height:auto;
+    text-align:center;
+
 }
 .banner_taital_main {
     width: 100%;
     float: left;
-    margin: 50px;
 }
 
 .banner_taital {
@@ -1594,6 +1600,8 @@ button {
     font-weight: bold;
     line-height: 50px;
     font-family: 'Baloo Chettan 2', cursive;
+   
+
 }
 
 .search_text {
@@ -1679,7 +1687,7 @@ button {
 .categroy_section_2 {
     width: 100%;
     float: left;
-    padding-top: 40px;
+    padding-top: 0;
 }
 
 .materials_text {
@@ -2514,6 +2522,7 @@ textarea#comment.massage-bt::placeholder {
 }
 .slider-area {
     position: relative;
+    text-align:center;
 }
 /* slider-two */
 .slider-area-two {
@@ -2760,8 +2769,8 @@ textarea#comment.massage-bt::placeholder {
 /*=============================
 	09. About
 ===============================*/
-.about-area{
-    background-color: lightblue;
+.abouts-area{
+    background-color:lightblue;
 }
 .section-title .sub-title {
     display: inline-flex;
