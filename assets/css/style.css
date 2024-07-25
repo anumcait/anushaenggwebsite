@@ -404,10 +404,11 @@ label {
 /* header-top */
 .header-top-wrap {
     padding: 9px 0;
+    
     background: var(--tg-secondary-color);
 }
 .header-top-left span {
-    display: block;
+    display:block;
     font-size: 16px;
     line-height: 1.4;
     color: #D1D1D1;
