@@ -601,7 +601,7 @@
     padding: 45px 0;
 }
 .about-area {
-    padding: 120px 0;
+    padding: 40px 0;
 }
 .slider-content-two .title {
     font-size: 100px;
@@ -745,11 +745,19 @@
 .services-content-five .content {
     padding: 14px 10px;
 }
+
 .consultation-img-two {
-    display: none;
+    background-size: contain;
+    background-position: top;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .consultation-content.consultation-content-two {
-    margin-left: 0;
+    margin-left: 50%;
+    padding:10px;
 }
 .project-content-four {
     padding: 20px 30px 30px 30px;

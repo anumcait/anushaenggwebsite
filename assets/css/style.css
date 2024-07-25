@@ -2730,14 +2730,14 @@ textarea#comment.massage-bt::placeholder {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: 600;
-    color: var(--tg-white);
+    color: var(--tg-primary-color);
 }
 .breadcrumb-content .breadcrumb {
     margin-bottom: 0;
 }
 .breadcrumb-content .breadcrumb-item {
     line-height: 1.2;
-    color: #D9D9D9;
+    color: var(--tg-primary-color);
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
@@ -3764,6 +3764,7 @@ textarea#comment.massage-bt::placeholder {
     position: absolute;
     left: 0;
     top: 0;
+    margin-left:10px;
 }
 .consultation-img-two .play-btn {
     width: 20px;
@@ -4213,6 +4214,12 @@ textarea#comment.massage-bt::placeholder {
 /*=============================
 	14. Choose
 ===============================*/
+.choose-area {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+}
+
 .choose-img-wrap {
     position: relative;
     padding-right: 47px;
@@ -5731,6 +5738,7 @@ textarea#comment.massage-bt::placeholder {
     text-align: center;
     padding: 50px 30px 40px;
     margin-bottom: 35px;
+    
 }
 .contact-info-item .icon {
     font-size: 60px;
@@ -5751,6 +5759,7 @@ textarea#comment.massage-bt::placeholder {
     color: var(--tg-secondary-color);
     line-height: 1.54;
 }
+
 .contact-info-item .content p a {
     color: var(--tg-secondary-color);
 }
