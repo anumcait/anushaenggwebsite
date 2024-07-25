@@ -62,25 +62,10 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="header-top-social">
-                            <ul class="list-wrap">
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li><a href="https://api.whatsapp.com/send?phone=9866501922" class="float" target="_blank">
-                                        <i class="fab fa-whatsapp" style="margin-top:8px;"></i>
-                                        </a></li>
-                                <li>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                </li>
-                            </ul>
+                        <div class="header-top-left">
+                            <span><i class="fas fa-handshake"></i>Welcome to Anusha Engg Industries</span>
                         </div>
+                       
                     </div>
                 </div>
             </div>
@@ -116,7 +101,7 @@
                                     </svg>
                                 </div>
                                 <div class="content">
-                                    <span>Send us a mail</span>
+                                    <span>Call us</span>
                                     <a href="Ph: +91-9866501922">+91-9866501922</a>
                                 </div>
                             </div>

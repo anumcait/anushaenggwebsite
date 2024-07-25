@@ -408,7 +408,7 @@ label {
 }
 .header-top-left span {
     display: block;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
     color: #D1D1D1;
 }
@@ -416,6 +416,7 @@ label {
     margin-right: 5px;
     color: var(--tg-white);
 }
+
 .header-top-social .list-wrap {
     display: flex;
     align-items: center;
