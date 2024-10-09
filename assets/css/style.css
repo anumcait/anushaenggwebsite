@@ -444,7 +444,7 @@ label {
 
 /* header-logo-area */
 .header-logo-area {
-    padding: 22px 0 28px;
+    /* padding: 22px 0 28px; */
     background: var(--tg-white);
 }
 .header-info-wrap {
@@ -457,7 +457,8 @@ label {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    padding: 17px 25px;
+    padding: 3px;
+    margin-top: 10px;
     transition: .3s linear;
 }
 .header-info-wrap .header-info-item .icon {
@@ -518,7 +519,8 @@ label {
 
 /* menu */
 .menu-area {
-    background: rgba(34, 37, 47, 0.40);
+    background: rgba(34, 37, 47, 0.90);
+    margin-top:10px;
 }
 .menu-nav {
 	display: flex;
@@ -557,7 +559,7 @@ label {
     font-weight: 600;
     text-transform: uppercase;
     color: var(--tg-white);
-    padding: 40px 0;
+    padding: 10px 0;
     display: block;
     line-height: 1;
     position: relative;
@@ -1578,32 +1580,41 @@ button {
 
 /* banner section start */
 
-.banner_section {
+ .banner_section{
     width: 100%;
-    height:auto;
-    padding: 250px 0px 80px 0px;
+    height: 80vh;
+    position: relative; /* Set positioning context */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+   
 }
 
-.banner_img{
-    width:100%;
-    height:auto;
-    text-align:center;
+.banner_img img {
+    padding: 80px;
+    width: 100%; /* Full width */
+    height: 400px; /* Maintain aspect ratio */
 
 }
-.banner_taital_main {
+.banner_title_main {
     width: 100%;
     float: left;
 }
 
-.banner_taital {
+.banner_title {
     width: 100%;
     font-size: 50px;
     color: #060606;
     font-weight: bold;
     line-height: 50px;
     font-family: 'Baloo Chettan 2', cursive;
-   
+ 
 
+}
+.banner_subtitle {
+    font-size: 24px; /* Increase subtitle font size */
+    margin-top: 10px; /* Space between title and subtitle */
 }
 
 .search_text {
@@ -1662,7 +1673,7 @@ button {
     .banner_section {
     padding: 120px 0px 80px 0px;
     }
-    .banner_taital_main {
+    .banner_title_main {
         margin: 20px;  
     }
 }
