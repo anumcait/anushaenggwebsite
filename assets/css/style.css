@@ -5880,7 +5880,7 @@ textarea#comment.massage-bt::placeholder {
 	24. Footer
 ===============================*/
 .footer-area {
-    background: var(--tg-orange);
+    background: var(--tg-secondary-color);
 }
 .footer-newsletter-wrap {
     padding: 60px 0;
