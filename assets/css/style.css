@@ -1687,12 +1687,28 @@ button {
 }
 @media (max-width: 768px) {
     .banner_section {
-    padding: 120px 0px 80px 0px;
+    padding: 40px 0px 40px 0px;
+    height: 100vh;
     }
     .banner_title_main {
-        margin: 20px;  
+        margin-top: 5px;  
     }
+    .banner_img img {
+        z-index: 2;
+        padding: 0;
+         height: 35vh;
+      }
 }
+
+@media (max-width: 860px) {
+
+    .banner_img img {
+        z-index: 2;
+        padding: 0;
+         height: 50vh;
+      }
+}
+
 
 /* banner section end */
 
@@ -4247,13 +4263,13 @@ textarea#comment.massage-bt::placeholder {
 .choose-area {
     position: relative;
     z-index: 1;
-    padding: 0;
+    padding-bottom: 10px;
 }
 
 .choose-img-wrap {
     position: relative;
     padding-right: 47px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 .choose-img-wrap img {
     border-radius: 20px;
