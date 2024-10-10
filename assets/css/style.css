@@ -1636,8 +1636,8 @@ button {
 
 .banner_title {
     width: 100%;
-    font-size: 50px;
-    color: darkgoldenrod;
+    font-size: 30px;
+    color: var(--tg-orange);
     font-weight: bold;
     line-height: 50px;
     font-family: 'Baloo Chettan 2', cursive;
@@ -5880,7 +5880,7 @@ textarea#comment.massage-bt::placeholder {
 	24. Footer
 ===============================*/
 .footer-area {
-    background: #171717;
+    background: var(--tg-orange);
 }
 .footer-newsletter-wrap {
     padding: 60px 0;
