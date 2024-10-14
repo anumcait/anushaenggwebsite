@@ -773,6 +773,54 @@ function wowAnimation() {
 	});
 	wow.init();
 }
+function includeHTML() {
+    document.querySelectorAll('[data-include]').forEach(element => {
+        const file = element.getAttribute('data-include');
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+                element.innerHTML = data;
+                // Initialize mobile menu functionality once the header is loaded
+                if (file === 'header.html') {
+                    initMobileMenu(); // Call your mobile menu function here
+                }
+            })
+            .catch(error => console.error('Error loading file:', error));
+    });
+}
+
+window.addEventListener('DOMContentLoaded', includeHTML);
+
+// Function to initialize mobile menu functionality
+function initMobileMenu() {
+    // Add dropdown button for menu items with children
+    if ($('.menu-area li.menu-item-has-children ul').length) {
+        $('.menu-area .navigation li.menu-item-has-children').append('<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>');
+    }
+
+    // Mobile Nav Hide/Show functionality
+    if ($('.mobile-menu').length) {
+        // Copy the main menu into the mobile menu
+        var mobileMenuContent = $('.menu-area .main-menu').html();
+        $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
+
+        // Dropdown Button functionality for submenus in mobile menu
+        $('.mobile-menu li.menu-item-has-children .dropdown-btn').on('click', function () {
+            $(this).toggleClass('open');
+            $(this).prev('ul').slideToggle(300);
+        });
+
+        // Open mobile menu on toggler click
+        $('.mobile-nav-toggler').on('click', function () {
+            $('body').addClass('mobile-menu-visible');
+        });
+
+        // Close mobile menu on backdrop or close button click
+        $('.menu-backdrop, .mobile-menu .close-btn').on('click', function () {
+            $('body').removeClass('mobile-menu-visible');
+        });
+    }
+}
 
 
 })(jQuery);
