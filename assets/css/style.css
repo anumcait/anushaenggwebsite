@@ -3081,10 +3081,10 @@ textarea#comment.massage-bt::placeholder {
 ===============================*/
 .services-area {
     position: relative;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .services-area::before {
     content: "";
