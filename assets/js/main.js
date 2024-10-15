@@ -111,6 +111,7 @@ $(".search-backdrop").on('click', function () {
 =============================================*/
 $(".menu-tigger").on("click", function () {
 	$(".extra-info,.offcanvas-overly").addClass("active");
+	
 	return false;
 });
 $(".menu-close,.offcanvas-overly").on("click", function () {
@@ -760,6 +761,7 @@ $('.product-license li').on('click', function (event) {
 });
 
 
+
 /*=============================================
 	=    		 Wow Active  	         =
 =============================================*/
@@ -783,7 +785,9 @@ function includeHTML() {
                 // Initialize mobile menu functionality once the header is loaded
                 if (file === 'header.html') {
                     initMobileMenu(); // Call your mobile menu function here
-                }
+					activeMenu(); //call activeMenu function here
+
+				}	
             })
             .catch(error => console.error('Error loading file:', error));
     });
@@ -822,5 +826,117 @@ function initMobileMenu() {
     }
 }
 
+function activeMenu(){
+	const currentPath = window.location.pathname.split('/').pop();
+					if (currentPath==="index.html"){
+					$("#nav-home").addClass("active");
+					}
+					else if  (currentPath==="about.html"){
+						$("#nav-about").addClass("active");
+					}
+					else if  (currentPath==="services.html"){
+						$("#nav-services").addClass("active");
+					}
+					else if  (currentPath==="machinery.html"){
+						$("#nav-machinery").addClass("active");
+					}
+					else if  (currentPath==="gallery.html"){
+						$("#nav-gallery").addClass("active");
+					}
+					else if  (currentPath==="faq.html"){
+						$("#nav-faq").addClass("active");
+					}
+					else if  (currentPath==="contact.html"){
+						$("#nav-contact").addClass("active");
+					}
+					else {
+						$("#nav-home").addClass("active");
+					}
+              
+}
+
+// document.addEventListener('DOMContentLoaded', function() {
+// // Get the current URL path
+// var currentPath = window.location.pathname;
+// alert(currentPath);
+
+// // Remove the 'active' class from all menu items
+// document.querySelectorAll('.navigation li').forEach(function(item) {
+//    item.classList.remove('active');
+// });
+
+// // Add the 'active' class based on the current page
+// if (currentPath.includes('about.html')) {
+//    alert('here'+document.getElementById('nav-about'));
+//    document.getElementById('nav-about').classList.add('active');
+// } else if (currentPath.includes('services.html') || currentPath.includes('services-details.html')) {
+//    document.getElementById('nav-services').classList.add('active');
+// } else if (currentPath.includes('project.html')) {
+//    document.getElementById('nav-products').classList.add('active');
+// } else if (currentPath.includes('machinery.html')) {
+//    document.getElementById('nav-machinery').classList.add('active');
+// } else if (currentPath.includes('gallery.html')) {
+//    document.getElementById('nav-gallery').classList.add('active');
+// } else if (currentPath.includes('faq.html')) {
+//    document.getElementById('nav-faq').classList.add('active');
+// } else if (currentPath.includes('contact.html')) {
+//    document.getElementById('nav-contact').classList.add('active');
+// } else {
+//    document.getElementById('nav-home').classList.add('active');
+// }
+
+// });
+
+// document.addEventListener('DOMContentLoaded', function() {
+// 	var aboutNav = document.getElementById('nav-about');
+// 	if (aboutNav) {
+// 		alert('here: ' + aboutNav);
+// 	} else {
+// 		alert('here: null (Element not found)');
+// 	}
+// });
+// document.addEventListener('DOMContentLoaded', function() {
+// 	// Dynamically load the header content using fetch
+// 	fetch('header.html')
+// 		.then(response => response.text())
+// 		.then(data => {
+// 			// Insert the loaded HTML content into the DOM
+// 			document.getElementById('header-container').innerHTML = data;
+
+// 			// After header is loaded, access the navigation element
+// 			var aboutNav = document.getElementById('nav-home');
+// 			if (aboutNav) {
+// 				alert('here test: ' + aboutNav);
+// 				document.getElementById('nav-home').classList.add('active');
+// 			} else {
+// 				alert('here: null (Element not found)');
+// 			}
+// 		})
+// 		.catch(error => console.error('Error loading header:', error));
+// });
+
+//  document.addEventListener('DOMContentLoaded', function() {
+//     var currentPath = window.location.pathname;
+
+//     // Add the 'active' class based on the current page
+//     if (currentPath.includes('about.html')) {
+//         alert('here: ' + $('#nav-about').text()); // Example alert to show it's working
+//         $('#nav-about').addClass('active');
+//     } else if (currentPath.includes('services.html') || currentPath.includes('services-details.html')) {
+//         $('#nav-services').addClass('active');
+//     } else if (currentPath.includes('project.html')) {
+//         $('#nav-products').addClass('active');
+//     } else if (currentPath.includes('machinery.html')) {
+//         $('#nav-machinery').addClass('active');
+//     } else if (currentPath.includes('gallery.html')) {
+//         $('#nav-gallery').addClass('active');
+//     } else if (currentPath.includes('faq.html')) {
+//         $('#nav-faq').addClass('active');
+//     } else if (currentPath.includes('contact.html')) {
+//         $('#nav-contact').addClass('active');
+//     } else {
+//         $('#nav-home').addClass('active');
+//     }
+// });
 
 })(jQuery);
