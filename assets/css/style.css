@@ -5922,7 +5922,8 @@ textarea#comment.massage-bt::placeholder {
     padding: 355px 0 95px;
     position: relative;
     z-index: 1;
-    background-image: url("/assets/img/images/cnc_bg.jpg");
+    background-color:var(--tg-primary-color);
+    background-image: url("/assets/img/images/bg-hero.png"); 
 }
 .footer-bg::before {
     content: "";
@@ -5982,10 +5983,10 @@ textarea#comment.massage-bt::placeholder {
     transform: translateY(-50%);
 }
 .footer-top {
-    padding: 60px 0 20px;
+    padding: 20px 0 10px;
 }
 .footer-widget {
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 .fw-title {
     font-size: 20px;
@@ -6124,6 +6125,9 @@ textarea#comment.massage-bt::placeholder {
 }
 .footer-social .list-wrap li a:hover {
     color: var(--tg-gray);
+}
+.footer-description{
+    color: #000;
 }
 
 /* footer-two */
