@@ -837,6 +837,9 @@ function activeMenu(){
 					else if  (currentPath==="services.html"){
 						$("#nav-services").addClass("active");
 					}
+					else if  (currentPath==="services-details.html"){
+						$("#nav-services").addClass("active");
+					}
 					else if  (currentPath==="machinery.html"){
 						$("#nav-machinery").addClass("active");
 					}
