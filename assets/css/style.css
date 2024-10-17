@@ -2776,6 +2776,123 @@ textarea#comment.massage-bt::placeholder {
     flex-wrap: wrap;
 }
 
+/* Product Details Section */
+.product-details-area {
+    padding: 20px 0;
+    background: #ffffff; /* White background to give a clean look */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    background-color: lightblue;
+}
+
+.product-details-area1 {
+    padding: 20px 0;
+    background: #ffffff; /* White background to give a clean look */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    
+}
+/* Center Text in Product Details */
+.product-details-desc h1, 
+.product-details-desc h2, 
+.product-details-desc p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-details-desc h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.product-details-desc h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Headings for Sections */
+.about-content h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling the Lists */
+.list-wrap {
+    list-style: none;
+    padding: 0;
+}
+
+.list-wrap li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 25px;
+}
+
+.list-wrap .icon {
+    font-size: 2rem;
+    color: #ff7e5f; /* Use the accent color for icons */
+    margin-right: 15px;
+}
+
+/* Card-Like Content for Advantages and Applications */
+.about-content .content {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-content .content p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.about-content .content strong {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Image Gallery Styling */
+.project-thumb-two {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease;
+
+}
+
+.project-thumb-two:hover {
+    transform: translateY(-10px); /* Smooth hover effect */
+   
+}
+
+.project-thumb-two img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+
+}
+
+.project-thumb-two:hover img {
+    transform: scale(1.05); /* Image zoom on hover */
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-details-desc h1 {
+        font-size: 2rem;
+    }
+    .product-details-desc h2 {
+        font-size: 1.5rem;
+    }
+}
 /*=============================
 	08. Breadcrumb
 ===============================*/
@@ -5361,6 +5478,93 @@ textarea#comment.massage-bt::placeholder {
     margin-bottom: 60px;
 }
 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 16px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+td {
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    td {
+        display: block;
+        text-align: left;
+        padding-left: 45%;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        top: 12px;
+        font-weight: bold;
+        color: #007bff;
+        text-transform: uppercase;
+    }
+
+    td:last-child {
+        padding-bottom: 16px;
+    }
+}
 /*=============================
 	23. Contact
 ===============================*/
