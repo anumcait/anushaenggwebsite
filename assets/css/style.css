@@ -1605,8 +1605,9 @@ button {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 180px 0px 80px 0px;
-    background-image: url('/assets/img/images/cnc_bg.jpg');
+    margin-top: 140px;
+    padding:0;
+    background-image: url('/assets/img/images/about_img1.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1622,8 +1623,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--tg-primary-color); /* Sea blue color overlay */
-    opacity: 0.6; /* Adjust the transparency of the overlay */
+    background-color: rgba(1, 1, 36, 0.9); /* Sea blue color overlay */
     z-index: 2; /* Ensures the overlay stays above the background image */
 }
 
@@ -1646,18 +1646,20 @@ button {
 }
 
 .banner_img img {
-    z-index: 2;
-    padding: 20px 80px;
+    padding: 80px 0;
     max-height: 100%; /* Ensures the image doesn't overflow vertically */
     max-width: 100%;  /* Ensures the image doesn't overflow horizontally */
     object-fit: contain; /* Optional: ensures the image keeps its aspect ratio */
+     align-items: center;
+    justify-content: center; 
 }
 
  .banner_title_main {
-    padding:50px 0px;
+
     width: 100%;
     float: left;
     z-index: 2;
+    margin-top: 80px;
 
 
 }
@@ -1721,20 +1723,38 @@ button {
     bottom: -80px;
     padding:50px 50px;
 }
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1500px) {
     .banner_section {
-    padding: 40px 0px 40px 0px;
-
+        margin-top: 180px; /* Adjust as needed */
     }
     .banner_title_main {
-        margin-top: 5px;  
+        margin-top: 80px; /* Adjust as needed */
     }
     .banner_img img {
         z-index: 2;
-        padding: 10px 40px;
-
-      }
+        width: 80%;
+        height: 80%;
+        /* You can adjust padding or other styles if necessary */
+        /* padding: 10px 30px; */
+    }
 }
+/* For mobile devices */
+@media (max-width: 768px) {
+    .banner_section {
+        margin-top: 80px;
+    }
+    .banner_title_main {
+        margin-top: 5px;
+    }
+    .banner_img img {
+        z-index: 2;
+        width: 60%;
+        height: 60%;
+        /* padding: 10px 40px; */
+    }
+}
+
+
 
 
 
