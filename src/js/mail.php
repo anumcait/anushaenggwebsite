@@ -1,38 +1,37 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// Load Composer's autoloader
+require 'vendor/autoload.php'; // Uncomment if using Composer
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Capture form data
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = htmlspecialchars(trim($_POST['email']));
-    $phone = htmlspecialchars(trim($_POST['phone']));
-    $subject = htmlspecialchars(trim($_POST['subject']));
-    $message = htmlspecialchars(trim($_POST['message']));
+// Use PHPMailer classes
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    // Your email address where you want to receive the messages
-    $to = "anumcait@gmail.com";  // Change this to your email address
-    $subject = "New Message from Contact Form: $subject";  // Email subject
+$mail = new PHPMailer(true); // Create a new PHPMailer instance
 
-    // Build the email content
-    $email_content = "Name: $name\n";
-    $email_content .= "Email: $email\n";
-    $email_content .= "Phone: $phone\n\n";
-    $email_content .= "Message:\n$message\n";
+try {
+    // Server settings
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host       = 'mx1.hostinger.com';             // Hostinger SMTP server
+    $mail->SMTPAuth   = true;                             // Enable SMTP authentication
+    $mail->Username   = 'info@anushaengg.com';         // Your Hostinger email address
+    $mail->Password   = 'Anushaengg357@#';            // Your email password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption
+    $mail->Port       = 587;                              // TCP port to connect to (587 for TLS)
 
-    // Email headers
-    $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    // Recipients
+    $mail->setFrom('your_email@example.com', 'Your Name'); // Your email and name
+    $mail->addAddress('recipient@example.com', 'Recipient Name'); // Add a recipient
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Here is the subject';               // Subject of the email
+    $mail->Body    = '<strong>This is the HTML message body</strong>'; // HTML message body
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients'; // Plain text message
 
     // Send the email
-    if (mail($to, $subject, $email_content, $headers)) {
-        // Redirect or display success message
-        echo "Thank you! Your message has been sent.";
-    } else {
-        // Redirect or display failure message
-        echo "Oops! Something went wrong and we couldn't send your message.";
-    }
-} else {
-    echo "Invalid Request";
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
