@@ -1445,7 +1445,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #212121;
+    /* color: #212121; */
     text-decoration: none!important;
     opacity: 1
 }
@@ -2914,10 +2914,6 @@ textarea#comment.massage-bt::placeholder {
     max-width: 800px; /* Limit the width */
 }
 
-.container {
-    padding: 20px; /* Inner padding for the container */
-}
-
 .heading {
     font-size: 2em; /* Larger font size for the heading */
     margin-bottom: 20px; /* Space below the heading */
@@ -4269,7 +4265,7 @@ textarea#comment.massage-bt::placeholder {
     background: rgba(0, 0, 0, 0.70);
 }
 .team-item {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .team-thumb {
     position: relative;
