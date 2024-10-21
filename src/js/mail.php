@@ -14,7 +14,7 @@ try {
     $mail->Host       = 'mx1.hostinger.com';             // Hostinger SMTP server
     $mail->SMTPAuth   = true;                             // Enable SMTP authentication
     $mail->Username   = 'info@anushaengg.com';         // Your Hostinger email address
-    $mail->Password   = 'Anushaengg357@#';            // Your email password
+    $mail->Password   = '';            // Your email password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption
     $mail->Port       = 587;                              // TCP port to connect to (587 for TLS)
 
