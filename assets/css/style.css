@@ -4654,11 +4654,14 @@ textarea#comment.massage-bt::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .brand-item-two img {
     cursor: pointer;
     filter: grayscale(1);
-    transition: .3s linear
+    transition: .3s linear;
+    width:250px;
+    height: 200px;
 }
 .brand-item-two img:hover {
     filter: grayscale(0);
