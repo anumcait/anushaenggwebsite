@@ -5982,7 +5982,7 @@ padding: 5px 10px;
     font-weight: 600;
 }
 .copyright-text p a:hover {
-    color: var(--tg-primary-color);
+    color: var(--tg-yellow);
 }
 .footer-social .list-wrap {
     display: flex;
